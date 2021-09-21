@@ -1,5 +1,8 @@
 pipeline {	 
-	agent any	 
+	agent any
+	tools {
+	  maven "3.6.0"
+	}
     	stages {     	 
     	stage("Compile") {          	 
             	steps {               	 
